@@ -14,7 +14,8 @@
      <title>Fito - Fitness Bootstrap Admin Dashboard</title>
      <!-- Favicon icon -->
      <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon.png">
-     <link href="~/Content/css/style.css" rel="stylesheet">
+    @Styles.Render("~/bundles/style/css")
+    
 
 </head>
 
@@ -62,10 +63,10 @@
           Scripts
      ***********************************-->
      <!-- Required vendors -->
-     <script src="~/Content/vendor/global/global.min.js"></script>
-     <script src="~/Content/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-     <script src="~/Content/js/custom.min.js"></script>
-     <script src="~/Content/js/deznav-init.js"></script>
+     @Scripts.Render("~/bundles/global.min/js")
+     @Scripts.Render("~/bundles/bootstrap-select.min/js")
+     @Scripts.Render("~/bundles/custom.min/js")
+     @Scripts.Render("~/bundles/deznav-init/js")
 
 </body>
 </html>
