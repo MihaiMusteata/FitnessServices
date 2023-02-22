@@ -11,9 +11,9 @@ namespace FitnessServices.web
             bundles.Add(new StyleBundle("~/bundles/style/css").Include(
                 "~/Content/css/style.css", new CssRewriteUrlTransform()));
             bundles.Add(new StyleBundle("~/bundles/chartist.min/css").Include(
-                "vendor/chartist/css/chartist.min.css", new CssRewriteUrlTransform()));
+                "~/Content/vendor/chartist/css/chartist.min.css", new CssRewriteUrlTransform()));
             bundles.Add(new StyleBundle("~/bundles/bootstrap-select.min/css").Include(
-              "vendor/bootstrap-select/dist/css/bootstrap-select.min.css", new CssRewriteUrlTransform()));
+              "~/Content/vendor/bootstrap-select/dist/css/bootstrap-select.min.css", new CssRewriteUrlTransform()));
             bundles.Add(new StyleBundle("~/bundles/LineIcons/css").Include(
              "~/Content/other/2.0/LineIcons.css", new CssRewriteUrlTransform()));
             bundles.Add(new StyleBundle("~/bundles/owl.carousel/css").Include(
