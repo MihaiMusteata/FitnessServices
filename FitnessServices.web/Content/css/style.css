@@ -48,12 +48,6 @@
         _page-user-lock
 
 */
-/*$primary  : #7356f1 !default;*/
-@import url("../../css");
-@import url("../../css-1");
-@import url("../../css-2");
-@import url("../../css-3");
-@import url("../../css-4");
 @import url("../icons/simple-line-icons/css/simple-line-icons.css");
 @import url("../icons/font-awesome-old/css/font-awesome.min.css");
 @import url("../icons/material-design-iconic-font/css/materialdesignicons.min.css");
@@ -1909,7 +1903,7 @@ pre {
     -webkit-overflow-scrolling: touch; }
     .table-responsive-xl > .table-bordered {
       border: 0; } }
-@media (max-width: 1439.98) {
+@media (max-width: 1439.98px) {
   .table-responsive-xxl {
     display: block;
     width: 100%;
@@ -2781,7 +2775,7 @@ input[type="button"].btn-block {
   .dropdown-menu-xl-right {
     right: 0;
     left: auto; } }
-@media (min-width: 1440) {
+@media (min-width: 1440px) {
   .dropdown-menu-xxl-left {
     right: auto;
     left: 0; }
@@ -3715,7 +3709,7 @@ input[type="button"].btn-block {
       flex-basis: auto; }
     .navbar-expand-xl .navbar-toggler {
       display: none; } }
-@media (max-width: 1439.98) {
+@media (max-width: 1439.98px) {
   .navbar-expand-xxl > .container,
   .navbar-expand-xxl > .container-fluid,
   .navbar-expand-xxl > .container-sm,
@@ -3724,7 +3718,7 @@ input[type="button"].btn-block {
   .navbar-expand-xxl > .container-xl {
     padding-right: 0;
     padding-left: 0; } }
-@media (min-width: 1440) {
+@media (min-width: 1440px) {
   .navbar-expand-xxl {
     flex-flow: row nowrap;
     justify-content: flex-start; }
@@ -11762,7 +11756,7 @@ svg.pulse-svg {
     float: left !important; }
   .rtl .float-xl-none {
     float: none !important; } }
-@media (min-width: 1440) {
+@media (min-width: 1440px) {
   .rtl .float-xxl-left {
     float: right !important; }
   .rtl .float-xxl-right {
@@ -13672,279 +13666,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .menu-toggle .nav-user .dropdown-menu {
     left: 45px !important;
     top: 22px !important; }
-
-.chatbox {
-  width: 340px;
-  height: 100vh;
-  position: fixed;
-  right: -500px;
-  top: 0;
-  z-index: 999;
-  background: #fff;
-  box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.15);
-  -webkit-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s; }
-  [data-theme-version="dark"] .chatbox {
-    background: #1e2746; }
-  .chatbox .chatbox-close {
-    position: absolute;
-    -webkit-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
-    width: 0;
-    height: 100%;
-    right: 340px;
-    background: #000;
-    z-index: 1;
-    opacity: 0.1;
-    cursor: pointer; }
-  .chatbox .card-fotter {
-    padding: 0.75rem 1rem; }
-  .chatbox .card-body {
-    padding: 1rem; }
-  .chatbox.active {
-    right: 0; }
-    .chatbox.active .chatbox-close {
-      width: 100vw; }
-  .chatbox .type_msg {
-    padding-top: 10px; }
-  .chatbox .nav {
-    padding: 1rem 1rem 0 1rem;
-    background: #6CC51D;
-    border: 0;
-    justify-content: space-between; }
-    .chatbox .nav .nav-link {
-      color: #fff;
-      opacity: 0.7;
-      text-transform: uppercase; }
-      .chatbox .nav .nav-link:hover, .chatbox .nav .nav-link.active {
-        background: transparent;
-        color: #fff;
-        opacity: 1;
-        border-color: #fff; }
-  .chatbox .img_cont {
-    width: 40px;
-    border-radius: 40px;
-    margin-right: 10px;
-    position: relative;
-    height: 40px;
-    background: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 14px;
-    min-width: 40px;
-    min-height: 40px; }
-    .chatbox .img_cont .icon {
-      color: #fff; }
-    .chatbox .img_cont.primary {
-      background: #ddf7c7;
-      color: #6CC51D; }
-      [data-theme-version="dark"] .chatbox .img_cont.primary {
-        background: rgba(108, 197, 29, 0.2); }
-    .chatbox .img_cont.warning {
-      background: #fff9f4;
-      color: #FF9432; }
-      [data-theme-version="dark"] .chatbox .img_cont.warning {
-        background: rgba(255, 148, 50, 0.1); }
-    .chatbox .img_cont.success {
-      background: #d5f5f1;
-      color: #37D1BF; }
-      [data-theme-version="dark"] .chatbox .img_cont.success {
-        background: rgba(55, 209, 191, 0.1); }
-    .chatbox .img_cont.info {
-      background: #d9f4f9;
-      color: #1EA7C5; }
-      [data-theme-version="dark"] .chatbox .img_cont.info {
-        background: rgba(30, 167, 197, 0.1); }
-    .chatbox .img_cont img {
-      width: 100%; }
-    .chatbox .img_cont .online_icon {
-      background: #37D1BF;
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-radius: 15px;
-      right: -1px;
-      bottom: 0px;
-      border: 2px solid #fff; }
-      .chatbox .img_cont .online_icon.offline {
-        background: #FF285C; }
-  .chatbox .card {
-    box-shadow: none; }
-  .chatbox .search {
-    height: 40px; }
-  .chatbox .user_info span {
-    font-size: 15px;
-    color: #000;
-    display: block;
-    font-weight: 500;
-    line-height: 1;
-    margin-bottom: 5px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    max-width: 170px; }
-    [data-theme-version="dark"] .chatbox .user_info span {
-      color: #fff; }
-  .chatbox .user_info p {
-    font-size: 13px;
-    margin-bottom: 0;
-    line-height: 1;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    max-width: 170px; }
-  .chatbox .contacts li {
-    padding: 7px 1rem;
-    border-bottom: 1px solid #eee;
-    cursor: pointer; }
-    [data-theme-version="dark"] .chatbox .contacts li {
-      border-color: #333a54; }
-    .chatbox .contacts li > div {
-      display: flex;
-      align-items: center; }
-    .chatbox .contacts li:hover {
-      background: #f4f7ff; }
-      [data-theme-version="dark"] .chatbox .contacts li:hover {
-        background-color: #181f39; }
-  .chatbox .contacts .name-first-letter {
-    background: #F5F9F1;
-    padding: 4px 1rem;
-    font-weight: 700;
-    color: #000;
-    position: sticky;
-    top: 0;
-    z-index: 1; }
-    [data-theme-version="dark"] .chatbox .contacts .name-first-letter {
-      color: #fff;
-      background: #181f39; }
-  .chatbox .msg_card_body {
-    height: calc(100vh - 195px); }
-  .chatbox .contacts_body {
-    height: calc(100vh - 120px); }
-  .chatbox .card-header {
-    background: #f4f7ff;
-    padding: 15px 20px;
-    justify-content: center; }
-    .chatbox .card-header h6 {
-      font-size: 15px; }
-    .chatbox .card-header p {
-      line-height: 1.2;
-      font-size: 12px;
-      color: #7e7e7e; }
-  .chatbox .chat-list-header {
-    justify-content: space-between;
-    background: #fff; }
-    [data-theme-version="dark"] .chatbox .chat-list-header {
-      background: #1e2746; }
-    .chatbox .chat-list-header a {
-      text-align: center;
-      width: 30px;
-      height: 30px;
-      background: #F5F9F1;
-      border-radius: 6px;
-      line-height: 30px;
-      display: block; }
-      [data-theme-version="dark"] .chatbox .chat-list-header a {
-        background: rgba(108, 197, 29, 0.2); }
-        [data-theme-version="dark"] .chatbox .chat-list-header a svg g [fill] {
-          fill: #fff; }
-  .chatbox .img_cont_msg {
-    width: 30px;
-    height: 30px;
-    display: block;
-    max-width: 30px;
-    min-width: 30px; }
-    .chatbox .img_cont_msg img {
-      width: 100%; }
-  .chatbox .msg_cotainer {
-    background: #6CC51D;
-    margin-left: 10px;
-    border-radius: 0 0.875rem 0.875rem 0.875rem;
-    padding: 10px 15px;
-    color: #fff;
-    position: relative; }
-    .chatbox .msg_cotainer .msg_time {
-      display: block;
-      font-size: 11px;
-      color: #fff;
-      margin-top: 5px;
-      opacity: 0.5; }
-    .chatbox .msg_cotainer:after {
-      content: "";
-      position: absolute;
-      left: -10px;
-      border-right: 10px solid #6CC51D;
-      border-bottom: 10px solid transparent;
-      border-top: 0px solid;
-      top: 0; }
-  .chatbox .msg_cotainer_send {
-    background: #F5F9F1;
-    padding: 10px 15px;
-    border-radius: 6px 0px 6px 6px;
-    margin-right: 10px;
-    color: #222;
-    position: relative;
-    text-align: right; }
-    [data-theme-version="dark"] .chatbox .msg_cotainer_send {
-      background: #181f39;
-      color: #fff; }
-    .chatbox .msg_cotainer_send .msg_time_send {
-      display: block;
-      font-size: 11px;
-      text-align: right;
-      margin-top: 5px;
-      opacity: 0.6; }
-    .chatbox .msg_cotainer_send:after {
-      content: "";
-      position: absolute;
-      right: -10px;
-      border-left: 10px solid #F5F9F1;
-      border-bottom: 10px solid transparent;
-      border-top: 0px solid;
-      top: 0; }
-      [data-theme-version="dark"] .chatbox .msg_cotainer_send:after {
-        border-left: 10px solid #181f39; }
-  .chatbox .type_msg .form-control {
-    padding: 10px 0;
-    height: 50px;
-    border: 0;
-    resize: none; }
-  .chatbox .type_msg .btn {
-    font-size: 18px;
-    border-radius: 38px !important;
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    margin-top: 6px; }
-  .chatbox .video_cam {
-    margin-left: 15px; }
-    .chatbox .video_cam span {
-      width: 35px;
-      height: 35px;
-      background: #10ca93;
-      text-align: center;
-      line-height: 35px;
-      border-radius: 35px;
-      color: #fff;
-      margin-right: 5px;
-      align-self: center;
-      font-size: 16px;
-      padding: 0 3px;
-      display: inline-block; }
-  .chatbox .note_card .contacts li {
-    padding: 12px 1rem; }
-
-@media only screen and (max-width: 576px) {
-  .chatbox {
-    width: 280px; }
-    .chatbox .chatbox-close {
-      right: 280px; } }
+  
 [data-nav-headerbg="color_2"][data-theme-version="dark"] .nav-header,
 [data-nav-headerbg="color_2"] .nav-header {
   background-color: #143b64; }
@@ -22989,7 +22711,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
         color: #7e7e7e !important; }
   .bootstrap-select .dropdown-menu {
     border-color: #f0f1f5 !important;
-    box-shadow: 0px 0Epx 40px 0px rgba(82, 63, 105, 0.1); }
+    box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1); }
     .bootstrap-select .dropdown-menu .dropdown-item {
       padding: 0.25rem 1rem; }
     [data-theme-version="dark"] .bootstrap-select .dropdown-menu {

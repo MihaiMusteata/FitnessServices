@@ -148,16 +148,6 @@
     <Content Include="Content\icons\themify-icons\css\themify-icons.css" />
     <Content Include="Content\icons\themify-icons\fonts\themify9f24.svg" />
     <Content Include="Content\images\1.jpg" />
-    <Content Include="Content\images\avatar\1.jpg" />
-    <Content Include="Content\images\avatar\1.png" />
-    <Content Include="Content\images\avatar\2.jpg" />
-    <Content Include="Content\images\avatar\3.jpg" />
-    <Content Include="Content\images\avatar\4.jpg" />
-    <Content Include="Content\images\avatar\5.jpg" />
-    <Content Include="Content\images\avatar\5.png" />
-    <Content Include="Content\images\avatar\6.jpg" />
-    <Content Include="Content\images\avatar\7.jpg" />
-    <Content Include="Content\images\avatar\8.jpg" />
     <Content Include="Content\images\big\img1.jpg" />
     <Content Include="Content\images\big\img2.jpg" />
     <Content Include="Content\images\big\img3.jpg" />
@@ -454,11 +444,6 @@
     <Content Include="Content\other\2.0\fonts\LineIcons.ttf" />
     <Content Include="Content\other\2.0\fonts\LineIcons.woff" />
     <Content Include="Content\other\2.0\fonts\LineIcons.woff2" />
-    <Content Include="Content\other\css" />
-    <Content Include="Content\other\css-1" />
-    <Content Include="Content\other\css-2" />
-    <Content Include="Content\other\css-3" />
-    <Content Include="Content\other\css-4" />
     <Content Include="Content\other\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf" />
     <Content Include="Content\other\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf" />
     <Content Include="Content\other\s\montserrat\v25\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf" />
@@ -562,6 +547,11 @@
     <Content Include="Scripts\bootstrap.esm.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\Shared\_Preloader.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_NavHeader.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

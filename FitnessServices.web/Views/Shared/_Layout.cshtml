@@ -7,11 +7,97 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>_Layout</title>
+     <meta name="viewport" content="width=device-width" />
+     <title>@ViewBag.Title Xtreme</title>
+     @Styles.Render("~/bundles/chartist.min/css")
+     @Styles.Render("~/bundles/bootstrap-select.min/css")
+     @Styles.Render("~/bundles/style/css")
+     @Styles.Render("~/bundles/LineIcons/css")
+     @Styles.Render("~/bundles/owl.carousel/css")
+     <!-- Favicon icon -->
+     <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon.png">
 </head>
 <body>
-    <div> 
-    </div>
+     <div id="preloader">
+          @Html.Partial("_Preloader")
+     </div>
+     <div id="main-wrapper">
+          @RenderBody()
+          <div class="deznav">
+               @Html.Partial("_Sidebar")
+          </div>
+          <div class="nav-header">
+               @Html.Partial("_NavHeader")
+          </div>
+          <div class="header">
+               @Html.Partial("_Header")
+          </div>
+          <div class="footer">
+               @Html.Partial("_Footer")
+          </div>
+     </div>
+
+     
+     <!-- Required vendors -->
+     @Scripts.Render("~/bundles/global.min/js")
+     @Scripts.Render("~/bundles/bootstrap-select.min/js")
+     @Scripts.Render("~/bundles/Chart.bundle.min/js")
+     @Scripts.Render("~/bundles/custom.min/js")
+     @Scripts.Render("~/bundles/deznav-init/js")
+     @Scripts.Render("~/bundles/owl.carousel/js")
+
+
+     <!-- Chart piety plugin files -->
+     @Scripts.Render("~/bundles/jquery.peity/js")
+
+     <!-- Apex Chart -->
+     @Scripts.Render("~/bundles/apexchart/js")
+
+     <!-- Dashboard 1 -->
+     @Scripts.Render("~/bundles/dashboard-1/js")
+     <script>
+        function featuredmenus() {
+
+            /*  testimonial one function by = owl.carousel.js */
+            jQuery('.featured-menus').owlCarousel({
+                loop: false,
+                margin: 30,
+                nav: true,
+                autoplaySpeed: 3000,
+                navSpeed: 3000,
+                paginationSpeed: 3000,
+                slideSpeed: 3000,
+                smartSpeed: 3000,
+                autoplay: false,
+                dots: false,
+                navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 1
+                    },
+                    767: {
+                        items: 1
+                    },
+                    991: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 2
+                    },
+                    1600: {
+                        items: 3
+                    }
+                }
+            })
+        }
+
+        jQuery(window).on('load', function () {
+            setTimeout(function () {
+                featuredmenus();
+            }, 1000);
+        });</script>
 </body>
 </html>
