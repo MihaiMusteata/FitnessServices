@@ -2,9 +2,7 @@
      <nav class="navbar navbar-expand">
           <div class="collapse navbar-collapse justify-content-between">
                <div class="header-left">
-                    <div class="dashboard_bar">
-                         Dashboard
-                    </div>
+                    <div class="dashboard_bar" id="dashboardBar"></div>
                </div>
 
                <ul class="navbar-nav header-right">
@@ -184,3 +182,6 @@
           </div>
      </nav>
 </div>
+<script>
+     document.getElementById("dashboardBar").innerHTML = localStorage.getItem('headerName');
+</script>

@@ -8,12 +8,13 @@
 <html>
 <head>
      <meta name="viewport" content="width=device-width" />
-     <title>@ViewBag.Title Xtreme</title>
+     <title>@ViewBag.Title Xtreme - Fitness Services</title>
      @Styles.Render("~/bundles/chartist.min/css")
      @Styles.Render("~/bundles/bootstrap-select.min/css")
      @Styles.Render("~/bundles/style/css")
      @Styles.Render("~/bundles/LineIcons/css")
      @Styles.Render("~/bundles/owl.carousel/css")
+     @Styles.Render("~/bundles/bootstrap-datetimepicker.min/css")
      <!-- Favicon icon -->
      <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon.png">
 </head>
@@ -45,7 +46,8 @@
      @Scripts.Render("~/bundles/custom.min/js")
      @Scripts.Render("~/bundles/deznav-init/js")
      @Scripts.Render("~/bundles/owl.carousel/js")
-
+     @Scripts.Render("~/bundles/moment/js")
+     @Scripts.Render("~/bundles/bootstrap-datetimepicker.min/js")
 
      <!-- Chart piety plugin files -->
      @Scripts.Render("~/bundles/jquery.peity/js")
@@ -53,8 +55,10 @@
      <!-- Apex Chart -->
      @Scripts.Render("~/bundles/apexchart/js")
 
-     <!-- Dashboard 1 -->
+     <!-- Dashboard -->
      @Scripts.Render("~/bundles/dashboard-1/js")
+     @Scripts.Render("~/bundles/workout-statistic/js")
+
      <script>
         function featuredmenus() {
 
@@ -99,5 +103,12 @@
                 featuredmenus();
             }, 1000);
         });</script>
+     <script>
+		$(function () {
+			$('#datetimepicker1').datetimepicker({
+				inline: true,
+			});
+		});
+	</script>
 </body>
 </html>

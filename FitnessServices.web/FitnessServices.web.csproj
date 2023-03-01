@@ -552,6 +552,9 @@
     <Content Include="Views\Shared\_Preloader.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_NavHeader.cshtml" />
+    <Content Include="Views\Home\WorkoutStatistic.cshtml" />
+    <Content Include="Views\Home\trash.cshtml" />
+    <Content Include="Views\Home\WorkoutPlan.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -561,6 +564,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Dashboard\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

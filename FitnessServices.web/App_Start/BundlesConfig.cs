@@ -18,10 +18,12 @@ namespace FitnessServices.web
              "~/Content/other/2.0/LineIcons.css", new CssRewriteUrlTransform()));
             bundles.Add(new StyleBundle("~/bundles/owl.carousel/css").Include(
              "~/Content/vendor/owl-carousel/owl.carousel.css", new CssRewriteUrlTransform()));
-          
+            bundles.Add(new StyleBundle("~/bundles/bootstrap-datetimepicker.min/css").Include(
+                 "~/Content/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css", new CssRewriteUrlTransform()));
 
-            //Scripts 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap/js").Include(
+
+               //Scripts 
+               bundles.Add(new ScriptBundle("~/bundles/bootstrap/js").Include(
                  "~/Scripts/bootstrap.min.js"));
             bundles.Add(new ScriptBundle("~/bundles/global.min/js").Include(
                  "~/Content/vendor/global/global.min.js"));
@@ -41,16 +43,13 @@ namespace FitnessServices.web
                "~/Content/vendor/apexchart/apexchart.js"));
             bundles.Add(new ScriptBundle("~/bundles/dashboard-1/js").Include(
               "~/Content/js/dashboard/dashboard-1.js"));
-            
+            bundles.Add(new ScriptBundle("~/bundles/workout-statistic/js").Include(
+                 "~/Content/js/dashboard/workout-statistic.js"));
+            bundles.Add(new ScriptBundle("~/bundles/moment/js").Include(
+                 "~/Content/vendor/bootstrap-datetimepicker/js/moment.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap-datetimepicker.min/js").Include(
+                 "~/Content/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"));
 
-
-
-
-
-
-
-
-
-        }
-    }
+          }
+     }
 }
