@@ -491,6 +491,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -555,6 +557,8 @@
     <Content Include="Views\Home\WorkoutStatistic.cshtml" />
     <Content Include="Views\Home\trash.cshtml" />
     <Content Include="Views\Home\WorkoutPlan.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -564,10 +568,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Dashboard\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessServices.BusinessLogic\FitnessServices.BusinessLogic.csproj">
+      <Project>{05d72935-9411-4684-86e4-cd479373ed62}</Project>
+      <Name>FitnessServices.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FitnessServices.Domain\FitnessServices.Domain.csproj">
+      <Project>{83d04e47-89f6-400b-8c85-de2fda3ab96b}</Project>
+      <Name>FitnessServices.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

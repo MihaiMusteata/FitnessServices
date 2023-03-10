@@ -1,5 +1,5 @@
 ﻿using System.Web.Optimization;
-namespace FitnessServices.web
+namespace FitnessServices.Web
 {
     public static class BundleConfig
     {

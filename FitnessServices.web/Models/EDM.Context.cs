@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FitnessServices.web.Models
+namespace FitnessServices.Web.Models
 {
     using System;
     using System.Data.Entity;

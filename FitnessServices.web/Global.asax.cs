@@ -8,7 +8,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace FitnessServices.web
+namespace FitnessServices.Web
 {
     public class Global : HttpApplication
     {

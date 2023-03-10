@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
 using System.Web.Security;
-using FitnessServices.web.Models;
+using FitnessServices.Web.Models;
 
-namespace FitnessServices.web.Controllers
+namespace FitnessServices.Web.Controllers
 {
      public class AccountController : Controller
      {

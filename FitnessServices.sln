@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessServices.web", "FitnessServices.web\FitnessServices.web.csproj", "{3EDFA4B2-573E-4C1E-AA16-DD18C457AC74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessServices.Web", "FitnessServices.web\FitnessServices.Web.csproj", "{3EDFA4B2-573E-4C1E-AA16-DD18C457AC74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessServices.BusinessLogic", "FitnessServices.BusinessLogic\FitnessServices.BusinessLogic.csproj", "{05D72935-9411-4684-86E4-CD479373ED62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessServices.Domain", "FitnessServices.Domain\FitnessServices.Domain.csproj", "{83D04E47-89F6-400B-8C85-DE2FDA3AB96B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessServices.Helpers", "FitnessServices.Helpers\FitnessServices.Helpers.csproj", "{0F1F3A0D-3D21-400A-BE13-3AD7801C3ADD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{3EDFA4B2-573E-4C1E-AA16-DD18C457AC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EDFA4B2-573E-4C1E-AA16-DD18C457AC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EDFA4B2-573E-4C1E-AA16-DD18C457AC74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D72935-9411-4684-86E4-CD479373ED62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D72935-9411-4684-86E4-CD479373ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D72935-9411-4684-86E4-CD479373ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D72935-9411-4684-86E4-CD479373ED62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D04E47-89F6-400B-8C85-DE2FDA3AB96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D04E47-89F6-400B-8C85-DE2FDA3AB96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D04E47-89F6-400B-8C85-DE2FDA3AB96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D04E47-89F6-400B-8C85-DE2FDA3AB96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1F3A0D-3D21-400A-BE13-3AD7801C3ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1F3A0D-3D21-400A-BE13-3AD7801C3ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1F3A0D-3D21-400A-BE13-3AD7801C3ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1F3A0D-3D21-400A-BE13-3AD7801C3ADD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
